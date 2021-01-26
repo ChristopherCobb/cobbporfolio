@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Developer from './components/Developer';
-import Creative from './components/Creative'
+// import Creative from './components/Creative'
 import Footer from './components/Footer';
 import './App.css';
 
 function App() {
 	const [developerToggle, setDeveloperToggle] = useState(false);
-	const [creativeToggle, setCreativeToggle] = useState(false);
+	// const [creativeToggle, setCreativeToggle] = useState(false);
 	
 	const showDeveloper = developerToggle ? 'width1' : '';
-	const showCreative = creativeToggle ? 'width1' : '';
+	// const showCreative = creativeToggle ? 'width1' : '';
 	
 	return (
 
@@ -19,7 +19,7 @@ function App() {
 					<h2
 						onClick={() => {
 							setDeveloperToggle(false);
-							setCreativeToggle(false);
+							// setCreativeToggle(false);
 						}}>
 							Christopher Cobb
 					</h2>
@@ -29,7 +29,7 @@ function App() {
 						className='menu'
 						onClick={() => {
 							setDeveloperToggle(!developerToggle);
-							setCreativeToggle(false);
+							// setCreativeToggle(false);
 						}}>
 						Software Developer&nbsp;
 					</p>
@@ -50,13 +50,13 @@ function App() {
 					className='close'
 					onClick={() => {
 						setDeveloperToggle(false);
-						setCreativeToggle(false);
+						// setCreativeToggle(false);
 					}}>
 					close
 				</p>
 			</div>
 
-			<div className={`contentBox ${showCreative}`}>
+			{/* <div className={`contentBox ${showCreative}`}>
 				<Creative />
 				<p
 					className='close'
@@ -67,7 +67,7 @@ function App() {
 					}}>
 					close
 				</p>
-			</div>
+			</div> */}
 			<div>
 				<Footer />
 			</div>
